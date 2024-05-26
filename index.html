@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe's Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional custom styles can be added here */
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 text-white p-4 fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="font-bold text-xl">John Doe</a>
+            <div class="hidden md:block">
+                <a href="#home" class="mr-4">Home</a>
+                <a href="#projects" class="mr-4">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <!-- Hamburger menu for mobile -->
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="h-screen bg-cover bg-center flex flex-col justify-center items-center text-white">
+        <div class="text-center">
+            <img src="john-doe.jpg" alt="John Doe" class="rounded-full w-32 h-32 mx-auto mb-4">
+            <h1 class="text-black text-4xl font-bold">John Doe</h1>
+            <p class="text-black text-lg">Web Developer & Designer</p> 
+            <br>
+            <a href="#projects" class="mt-8 px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">View Projects</a>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project Cards go here -->
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Project Title</h3>
+                    <p class="text-gray-600">Brief description of the project</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-200">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Skill Cards go here -->
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-bold mb-2">HTML</h3>
+                    <p class="text-gray-600">Experience with HTML5</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <ul class="flex justify-center mb-4">
+                <li class="mr-6"><a href="#" class="hover:text-gray-400">LinkedIn</a></li>
+                <li class="mr-6"><a href="#" class="hover:text-gray-400">GitHub</a></li>
+                <li><a href="#" class="hover:text-gray-400">Twitter</a></li>
+            </ul>
+            <p>Email: john.doe@example.com</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for smooth scrolling can be added here
+    </script>
+</body>
+</html>
